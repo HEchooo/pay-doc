@@ -4,7 +4,7 @@
 
 ## 对接指引
 
-* [商户入网](dui-jie-zhi-yin/what-we-do.md)
+* [商户入网](dui-jie-zhi-yin/shang-hu-ru-wang.md)
 * [技术对接](dui-jie-zhi-yin/ji-shu-dui-jie.md)
 * [发起交易](dui-jie-zhi-yin/fa-qi-jiao-yi.md)
 * [后台管理](dui-jie-zhi-yin/hou-tai-guan-li.md)
@@ -21,6 +21,6 @@
 
 ## 附录
 
-* [🛠 其他](fu-lu/getting-set-up/README.md)
-  * [📝 FAQ](fu-lu/getting-set-up/error-code.md)
-  * [💰 支持币种](fu-lu/getting-set-up/zhi-chi-bi-zhong.md)
+* [🛠 其他](fu-lu/others/README.md)
+  * [📝 FAQ](fu-lu/others/faq.md)
+  * [💰 支持币种](fu-lu/others/zhi-chi-bi-zhong.md)
