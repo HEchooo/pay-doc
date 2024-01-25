@@ -6,6 +6,10 @@
 2. 商户使用在请求Header中传入appKey:secret\_key123进行查询接口调用。
 3. 增删改接口在传入 2 步骤中的appKey的同时还需要用商户私钥签名和时间戳(都是在 Header中传入，如signToken:sign123, Timestamp=1704643200000(ms))。
 
+{% content-ref url="rsa-secret-create.md" %}
+[rsa-secret-create.md](rsa-secret-create.md)
+{% endcontent-ref %}
+
 ## 签名signToken生成规则：
 
 1. 商户端拼接待签名字符串，拼接内容： 时间戳(单位ms)\_URI\_param
