@@ -4,7 +4,11 @@
 
 ## 对接指引
 
-* [💡 What we do](dui-jie-zhi-yin/what-we-do.md)
+* [商户入网](dui-jie-zhi-yin/what-we-do.md)
+* [技术对接](dui-jie-zhi-yin/ji-shu-dui-jie.md)
+* [发起交易](dui-jie-zhi-yin/fa-qi-jiao-yi.md)
+* [后台管理](dui-jie-zhi-yin/hou-tai-guan-li.md)
+* [订单状态通知](dui-jie-zhi-yin/ding-dan-zhuang-tai-tong-zhi.md)
 
 ## API文档
 
