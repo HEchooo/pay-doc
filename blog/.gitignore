@@ -3,3 +3,4 @@ Thumbs.db
 db.json
 *.log
 _multiconfig.yml
+/node_modules/*
