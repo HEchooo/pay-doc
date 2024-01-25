@@ -1,8 +1,12 @@
+---
+title: 签名秘钥生成方式
+---
+
 ## OpenSSL安装
 ### Linux（Ubuntu）
 
 
-`sudo apt-get install openssl`
+`sudo apt-get install openssl`  
 
 
 ### Windows
@@ -15,7 +19,7 @@
 
 
 
-`brew reinstall openssl`
+```brew reinstall openssl```
 
 
 ## RSA密钥对的产生
