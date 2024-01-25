@@ -1,2 +1,8 @@
-# pay-doc
-B 端商家可以通过 接入 EchoooPay收款服务快速的集成虚拟货币稳定币收款功能。支持以太坊、Polygn 、Tron 链，币种支持 USDC、USDT。
+## 如何使用
+1. 前端静态html文件目录: ./blog/public/**
+2. 后端markdown编写目录: ./blog/source/_posts
+
+
+## md静态化工具
+HEXO https://hexo.io/zh-cn/docs/
+生成静态化文件: `hexo generate`
