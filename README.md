@@ -8,8 +8,8 @@ B 端商家可以通过 接入 EchoooPay收款服务快速的集成虚拟货币�
 
 ## 快速接入
 
-{% content-ref url="dui-jie-zhi-yin/shang-hu-ru-wang.md" %}
-[shang-hu-ru-wang.md](dui-jie-zhi-yin/shang-hu-ru-wang.md)
+{% content-ref url="dui-jie-zhi-yin/what-we-do.md" %}
+[what-we-do.md](dui-jie-zhi-yin/what-we-do.md)
 {% endcontent-ref %}
 
 ##
