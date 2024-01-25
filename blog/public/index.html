@@ -228,6 +228,59 @@
 
 
   
+    <article id="post-使用OpenSSL来产生RSA密钥" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/01/24/%E4%BD%BF%E7%94%A8OpenSSL%E6%9D%A5%E4%BA%A7%E7%94%9FRSA%E5%AF%86%E9%92%A5/" class="article-date">
+  <time class="dt-published" datetime="2024-01-24T09:22:04.854Z" itemprop="datePublished">2024-01-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/01/24/%E4%BD%BF%E7%94%A8OpenSSL%E6%9D%A5%E4%BA%A7%E7%94%9FRSA%E5%AF%86%E9%92%A5/">签名秘钥生成方式</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="OpenSSL安装"><a href="#OpenSSL安装" class="headerlink" title="OpenSSL安装"></a>OpenSSL安装</h2><h3 id="Linux（Ubuntu）"><a href="#Linux（Ubuntu）" class="headerlink" title="Linux（Ubuntu）"></a>Linux（Ubuntu）</h3><p><code>sudo apt-get install openssl</code>  </p>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>可以在官网下载 <a target="_blank" rel="noopener" href="https://www.openssl.org/source/">Downloads</a> .</p>
+<h3 id="macOS"><a href="#macOS" class="headerlink" title="macOS"></a>macOS</h3><p>自带，或者输入一下命令重新安装</p>
+<p><code>brew reinstall openssl</code></p>
+<h2 id="RSA密钥对的产生"><a href="#RSA密钥对的产生" class="headerlink" title="RSA密钥对的产生"></a>RSA密钥对的产生</h2><h3 id="Linux-macOS"><a href="#Linux-macOS" class="headerlink" title="Linux \ macOS"></a>Linux \ macOS</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">openssl genrsa -out pay_rsa_private_key.pem 1024</span><br><span class="line">openssl pkcs8 -topk8 -inform PEM -in pay_rsa_private_key.pem  -outform PEM -nocrypt</span><br><span class="line">openssl rsa -in pay_rsa_private_key.pem -pubout -out  pay_rsa_public_key.pem</span><br></pre></td></tr></table></figure>
+
+<h3 id="Windows-在命令行窗口操作："><a href="#Windows-在命令行窗口操作：" class="headerlink" title="Windows 在命令行窗口操作："></a>Windows 在命令行窗口操作：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">C:\OpenSSL-Win32\bin&gt;openssl.exe</span><br><span class="line">OpenSSL&gt; genrsa -out pay_rsa_private_key.pem 1024</span><br><span class="line">OpenSSL&gt; pkcs8 -topk8 -inform PEM -in pay_rsa_private_key.pem  -outform PEM -nocrypt</span><br><span class="line">OpenSSL&gt; rsa -in pay_rsa_private_key.pem -pubout -out  pay_rsa_public_key.pem</span><br><span class="line">OpenSSL&gt; exit</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用方式："><a href="#使用方式：" class="headerlink" title="使用方式："></a>使用方式：</h3><p>在当前目录下会产生两个文件pay_rsa_private_key.pem和 pay_rsa_public_key.pem. 前面一个是私钥文件，后面一个是公钥文件。商家自行保管私钥文件，用来对关键接口签名，并将公钥文件除注释部分内容通过接口上传，EchoooPay 后台会对接口验签。</p>
+<h4 id="PKCS8格式的标注私钥文件"><a href="#PKCS8格式的标注私钥文件" class="headerlink" title="PKCS8格式的标注私钥文件"></a>PKCS8格式的标注私钥文件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">-----BEGIN PRIVATE KEY-----</span><br><span class="line">MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBANabv9RXmXbcD1qT</span><br><span class="line">I0zTqhRfsee6Yo7OnfXCI0NNeeUJMAqz0twu60uTI/PDJ70FA7+tZ+9AJZhv69dO</span><br><span class="line">gdO3aTwYJVoWYcmcvj3Lq4w3KZL4da9W8zyazYHJZn0hIs/pbENzBT8JgrnVgywM</span><br><span class="line">uEw1MMBiSSq/HpSw7flWlr9Hrm9LAgMBAAECgYAe4S5LCYfFeIilCcLsjRBN+i8J</span><br><span class="line">HuKLleNYt2SHjKBbemT1RUaz8/RbXYKw0oXnRs9xRyxLWrmOI5yV0HAR3LRBc+va</span><br><span class="line">DzaeE03fMavlHhnUV50M+FWLDplia7R/CvIVLLSO8nnuSCe8M2RDaNPtZNGkSfnf</span><br><span class="line">I87xEFGL1NIf9oQoQQJBAOqsXA/bBz5623aQOZmS9Dv3PBgSQafO8T2AqqOoS51N</span><br><span class="line">9M9ODPQntE5nhmA3+sCpnYi41XjJUhdjbkfU9VhfWPsCQQDqHJVDC/a15X6vzcSw</span><br><span class="line">ZyeFITXM9FNkPcpXQtz79HWrrzq9UaTOVmWZVqTUbQmaV96clhzDNXlZWSF/oxdJ</span><br><span class="line">mRHxAkEA6TrwLFn08yXLZCSm+njQ/6ASO6I5WnwTyppL/WdP70EBI99ghG/JhXri</span><br><span class="line">VFKOhliM1stMbkU3r0ME4aNHS9NHbQJAavkokvxSfQcifj5t05UvD7v/E2nI+RLq</span><br><span class="line">9DiPNWmcoxhspLk7rzT3M7vNkWtJagcgpzhIaEJ08oixr9rb9ztEYQJAY8t4Z/3A</span><br><span class="line">DQLETh3GZ5XPPCpEFElAXJg1ksNU/HAlF6+DCwv4E5ainVAlR3+ZeXcvw0a/KTpg</span><br><span class="line">vOntaIf9dsS4Fw==</span><br><span class="line">-----END PRIVATE KEY-----</span><br></pre></td></tr></table></figure>
+
+<h4 id="公钥文件"><a href="#公钥文件" class="headerlink" title="公钥文件"></a>公钥文件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-----BEGIN PUBLIC KEY-----</span><br><span class="line">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWm7/UV5l23A9akyNM06oUX7Hn</span><br><span class="line">umKOzp31wiNDTXnlCTAKs9LcLutLkyPzwye9BQO/rWfvQCWYb+vXToHTt2k8GCVa</span><br><span class="line">FmHJnL49y6uMNymS+HWvVvM8ms2ByWZ9ISLP6WxDcwU/CYK51YMsDLhMNTDAYkkq</span><br><span class="line">vx6UsO35Vpa/R65vSwIDAQAB</span><br><span class="line">-----END PUBLIC KEY-----</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="需要上传的公钥文件信息："><a href="#需要上传的公钥文件信息：" class="headerlink" title="需要上传的公钥文件信息："></a>需要上传的公钥文件信息：</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWm7/UV5l23A9akyNM06oUX7Hn</span><br><span class="line">umKOzp31wiNDTXnlCTAKs9LcLutLkyPzwye9BQO/rWfvQCWYb+vXToHTt2k8GCVa</span><br><span class="line">FmHJnL49y6uMNymS+HWvVvM8ms2ByWZ9ISLP6WxDcwU/CYK51YMsDLhMNTDAYkkq</span><br><span class="line">vx6UsO35Vpa/R65vSwIDAQAB</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/01/24/%E4%BD%BF%E7%94%A8OpenSSL%E6%9D%A5%E4%BA%A7%E7%94%9FRSA%E5%AF%86%E9%92%A5/" data-id="clrsuma640000p2cn5rm23bjz" data-title="签名秘钥生成方式" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
 
 
 </section>
@@ -268,6 +321,10 @@
         
           <li>
             <a href="/2024/01/24/%E7%AD%BE%E5%90%8D%E6%9C%BA%E5%88%B6/">开放API鉴权方式</a>
+          </li>
+        
+          <li>
+            <a href="/2024/01/24/%E4%BD%BF%E7%94%A8OpenSSL%E6%9D%A5%E4%BA%A7%E7%94%9FRSA%E5%AF%86%E9%92%A5/">签名秘钥生成方式</a>
           </li>
         
       </ul>
