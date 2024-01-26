@@ -10,30 +10,6 @@
 
 
 
-**返回结果说明**
-
-|                         |        |    | 备注        |
-| ----------------------- | ------ | -- | --------- |
-| code                    | _T_文本  | 必须 |           |
-| message                 | _T_文本  | 必须 |           |
-| data                    | object | 必须 |           |
-| chain                   | object | 必须 | 链         |
-| orderId                 | _T_文本  | 必须 | 订单号       |
-| outerOrderId            | _T_文本  | 必须 | 商户订单号     |
-| originCurrency          | _T_文本  | 必须 | 原始法币      |
-| originCurrencyAmount    | _T_文本  | 必须 | 原始法币金额    |
-| payCurrency             | _T_文本  | 必须 | 支付法币      |
-| payCurrencyAmount       | _T_文本  | 必须 | 支付法币数量    |
-| payStatus               | _T_文本  | 必须 | 订单状态      |
-| gmtPayStart             | _T_文本  | 必须 | 支付开始时间    |
-| gmtPayFinish            | _T_文本  | 必须 | 支付完成时间    |
-| incomeToken             | _T_文本  | 必须 | 收入代币      |
-| totalIncomeTokenAmount  | _T_文本  | 必须 | 总收入代币金额   |
-| actualIncomeTokenAmount | _T_文本  | 必须 | 实际收入代币金额  |
-| incomeFeeTokenAmount    | _T_文本  | 必须 | 收入手续费代币金额 |
-
-
-
 **响应预览**
 
 ```
