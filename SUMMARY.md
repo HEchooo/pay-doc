@@ -18,6 +18,7 @@
 * [openApi列表](api-wen-dang/open-api-list/README.md)
   * [预创建支付单](api-wen-dang/open-api-list/yu-chuang-jian-zhi-fu-dan.md)
   * [创建支付单](api-wen-dang/open-api-list/chuang-jian-zhi-fu-dan.md)
+  * [支付单详情](api-wen-dang/open-api-list/chuang-jian-zhi-fu-dan-1.md)
 
 ## 附录
 
