@@ -1,10 +1,27 @@
 # 开放API鉴权方式
 
+## 开放API
+
+以下为支持的开放API列表:&#x20;
+
+{% content-ref url="../open-api-list/" %}
+[open-api-list](../open-api-list/)
+{% endcontent-ref %}
+
+所有开放API均需要走本文所述的签名流程, 在HTTP Header中传入以下三个参数:&#x20;
+
+| appKey    | 商户后台产生的appkey |   |
+| --------- | ------------- | - |
+| timestamp | 时间(毫秒)        |   |
+| signToken | 签名            |   |
+
+其中签名流程及规则如下:
+
 ## 流程:
 
 1. 秘钥管理处生成app\_key, app\_secret, 保存在服务端pay\_merchant\_secret表中，并透出给商户。
 2. 商户使用在请求Header中传入appKey:secret\_key123进行查询接口调用。
-3. 增删改接口在传入 2 步骤中的appKey的同时还需要用商户私钥签名和时间戳(都是在 Header中传入，如signToken:sign123, Timestamp=1704643200000(ms))。
+3. 增删改接口在传入 2 步骤中的appKey的同时还需要用商户私钥签名和时间戳(都是在 Header中传入，如signToken:sign123, timestamp=1704643200000(ms))。
 
 {% content-ref url="rsa-secret-create.md" %}
 [rsa-secret-create.md](rsa-secret-create.md)
