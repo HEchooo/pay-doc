@@ -4,7 +4,22 @@
 
 ### 回调信息：POST
 
-商户订单号 EchoooPay订单号 商户入网钱包地址 订单法币币种 订单法币金额 订单状态 付款网络ID（链ID）：例：Ethereum 付款币种 付款数量 订单收款地址 完成时间 signature
+| 字段                  |               |                                         |
+| ------------------- | ------------- | --------------------------------------- |
+| outerOrderId        | 商户订单号         |                                         |
+| orderId             | EchoooPay订单号  |                                         |
+| receiptAddress      | 商户入网钱包地址      |                                         |
+| payCurrency         | 订单法币币种        |                                         |
+| payCurrencyAmount   | 订单法币金额        |                                         |
+| payStatus           |  订单状态         |                                         |
+| chainId             |  付款网络ID       | 链ID, 例：Ethereum                         |
+| payTokenCoingeckoId | 付款币种          | 获取方式\[[链接](https://www.coingecko.com/)] |
+| payTokenAmount      |  付款数量         |                                         |
+| incomeTokenAddress  | 订单收款地址        |                                         |
+| finishTime          | 完成时间          |                                         |
+| signature           | 签名            |                                         |
+
+
 
 ### 流程:
 
