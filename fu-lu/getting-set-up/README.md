@@ -4,7 +4,7 @@
 [error-code.md](error-code.md)
 {% endcontent-ref %}
 
-{% content-ref url="zhi-chi-bi-zhong.md" %}
-[zhi-chi-bi-zhong.md](zhi-chi-bi-zhong.md)
+{% content-ref url="../others/inviting-members.md" %}
+[inviting-members.md](../others/inviting-members.md)
 {% endcontent-ref %}
 

@@ -24,4 +24,4 @@
 
 * [🛠 其他](fu-lu/getting-set-up/README.md)
   * [📝 FAQ](fu-lu/getting-set-up/error-code.md)
-  * [💰 支持币种](fu-lu/getting-set-up/zhi-chi-bi-zhong.md)
+  * [💰 支持币种](fu-lu/others/inviting-members.md)
