@@ -16,5 +16,5 @@
     * [创建支付单](api-wen-dang/open-api-list/chuang-jian-zhi-fu-dan.md)
     * [预创建支付单](api-wen-dang/open-api-list/yu-chuang-jian-zhi-fu-dan.md)
 * [附录](fu-lu/README.md)
-  * [FAQ](fu-lu/error-code.md)
+  * [💡 FAQ](fu-lu/error-code.md)
   * [💰 支持币种](fu-lu/inviting-members.md)

@@ -1,25 +1,39 @@
 # 回调接口验证方式
 
+商户在发起交易订单后30分钟内会收到平台的订单状态回调, 返回如下字段。
+
+如何发起交易：
+
+{% content-ref url="../dui-jie-zhi-yin/fa-qi-jiao-yi.md" %}
+[fa-qi-jiao-yi.md](../dui-jie-zhi-yin/fa-qi-jiao-yi.md)
+{% endcontent-ref %}
+
+订单状态:
+
+{% content-ref url="../fu-lu/error-code.md" %}
+[error-code.md](../fu-lu/error-code.md)
+{% endcontent-ref %}
+
+
+
 ## 商户订单回调
 
 ### 回调信息：POST
 
-| 字段                  |               |                                         |
-| ------------------- | ------------- | --------------------------------------- |
-| outerOrderId        | 商户订单号         |                                         |
-| orderId             | EchoooPay订单号  |                                         |
-| receiptAddress      | 商户入网钱包地址      |                                         |
-| payCurrency         | 订单法币币种        |                                         |
-| payCurrencyAmount   | 订单法币金额        |                                         |
-| payStatus           |  订单状态         |                                         |
-| chainId             |  付款网络ID       | 链ID, 例：Ethereum                         |
-| payTokenCoingeckoId | 付款币种          | 获取方式\[[链接](https://www.coingecko.com/)] |
-| payTokenAmount      |  付款数量         |                                         |
-| incomeTokenAddress  | 订单收款地址        |                                         |
-| finishTime          | 完成时间          |                                         |
-| signature           | 签名            |                                         |
-
-
+| 字段                  |              |                                         |
+| ------------------- | ------------ | --------------------------------------- |
+| outerOrderId        | 商户订单号        |                                         |
+| orderId             | EchoooPay订单号 |                                         |
+| receiptAddress      | 商户入网钱包地址     |                                         |
+| payCurrency         | 订单法币币种       |                                         |
+| payCurrencyAmount   | 订单法币金额       |                                         |
+| payStatus           | 订单状态         |                                         |
+| chainId             | 付款网络ID       | 链ID, 例：Ethereum                         |
+| payTokenCoingeckoId | 付款币种         | 获取方式\[[链接](https://www.coingecko.com/)] |
+| payTokenAmount      | 付款数量         |                                         |
+| incomeTokenAddress  | 订单收款地址       |                                         |
+| finishTime          | 完成时间         |                                         |
+| signature           | 签名           |                                         |
 
 ### 流程:
 
@@ -46,8 +60,6 @@ _**Note:**_
 _**没有值的参数，无需包含到待签名数据中；**_
 
 _**签名时将字符转化成字节流时指定的字符集为 UTF-8；**_
-
-
 
 **商户验签代码示例:**
 
