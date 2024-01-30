@@ -1,4 +1,4 @@
-# 🛠 其他
+# 其他
 
 {% content-ref url="error-code.md" %}
 [error-code.md](error-code.md)
@@ -7,4 +7,3 @@
 {% content-ref url="../others/inviting-members.md" %}
 [inviting-members.md](../others/inviting-members.md)
 {% endcontent-ref %}
-
