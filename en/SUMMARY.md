@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 EchooPay是什么](README.md)
+* [👋 EchoooPay是什么](README.md)
 
 ## 对接指引
 
