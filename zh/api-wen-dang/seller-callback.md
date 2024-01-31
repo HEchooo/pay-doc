@@ -8,32 +8,63 @@
 [fa-qi-jiao-yi.md](../dui-jie-zhi-yin/fa-qi-jiao-yi.md)
 {% endcontent-ref %}
 
-订单状态:
+订单状态枚举:
 
-{% content-ref url="../fu-lu/error-code.md" %}
-[error-code.md](../fu-lu/error-code.md)
+{% content-ref url="../fu-lu/ding-dan-zhuang-tai.md" %}
+[ding-dan-zhuang-tai.md](../fu-lu/ding-dan-zhuang-tai.md)
 {% endcontent-ref %}
 
 
 
 ## 商户订单回调
 
-### 回调信息：POST
+### 回调信息：POST&#x20;
 
-| 字段                  |              |                                         |
-| ------------------- | ------------ | --------------------------------------- |
-| outerOrderId        | 商户订单号        |                                         |
-| orderId             | EchoooPay订单号 |                                         |
-| receiptAddress      | 商户入网钱包地址     |                                         |
-| payCurrency         | 订单法币币种       |                                         |
-| payCurrencyAmount   | 订单法币金额       |                                         |
-| payStatus           | 订单状态         |                                         |
-| chainId             | 付款网络ID       | 链ID, 例：Ethereum                         |
-| payTokenCoingeckoId | 付款币种         | 获取方式\[[链接](https://www.coingecko.com/)] |
-| payTokenAmount      | 付款数量         |                                         |
-| incomeTokenAddress  | 订单收款地址       |                                         |
-| finishTime          | 完成时间         |                                         |
-| signature           | 签名           |                                         |
+传参方式: Content-Type: application/json
+
+字段说明:&#x20;
+
+| 字段                  | 含义           |                                                                                            |
+| ------------------- | ------------ | ------------------------------------------------------------------------------------------ |
+| outerOrderId        | 商户订单号        |                                                                                            |
+| orderId             | EchoooPay订单号 |                                                                                            |
+| receiptAddress      | 商户入网钱包地址     |                                                                                            |
+| payCurrency         | 订单法币币种       | \[[支持币种](../fu-lu/inviting-members.md)], 例：usd                                             |
+| payCurrencyAmount   | 订单法币金额       |                                                                                            |
+| payStatus           | 订单状态         |                                                                                            |
+| chainId             | 付款网络ID       | 链ID, 例：Ethereum                                                                            |
+| payTokenCoingeckoId | 付款币种         | 获取方式\[[链接](https://www.coingecko.com/)]                                                    |
+| payTokenAmount      | 付款数量         |                                                                                            |
+| incomeTokenAddress  | 订单收款地址       |                                                                                            |
+| finishTime          | 完成时间         | 时间戳(ms),例：1706167219110                                                                    |
+| signature           | 签名           | [#qian-ming-he-yan-qian-gui-ze](seller-callback.md#qian-ming-he-yan-qian-gui-ze "mention") |
+
+例:
+
+```
+curl 'https://api.youraddress.com/order/status/callback' \
+ -X POST \ 
+ -H 'Accept: */*' \ 
+ -H 'Timestamp: 1706167219110' \ 
+ -H 'Accept-Language: en_us' \ 
+ -H 'SignToken: F09QgHxuxRNnwkVoPmnS+QX94RSImA1/2i0UkMeMSGGMUhVO98EJ7YYYZ61LtJ5A' \ 
+ -H 'Connection: keep-alive' \ 
+ -H 'Content-Type: application/json' \ 
+ --data-raw '{
+  "outerOrderId": "100000000000000998",
+  "orderId": "202401292468613637",
+  "receiptAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+  "payCurrency": "usd",
+  "payCurrencyAmount": "1000",
+  "payStatus": "PAY_SUCCESS",
+  "chainId": "5",
+  "payTokenCoingeckoId": "usdd",
+  "payTokenAmount": "1000",
+  "incomeTokenAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+  "finishTime": "1706167219110",
+  "signature": ""
+}'
+```
 
 ### 流程:
 
@@ -53,7 +84,7 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhLrV9mzKGU2ntzXAt/AUn+JaA8T6WAUtBiT+
 
 对数组里的每一个值从a到z的顺序排序，若遇到相同首字母，则看第二个字母，以此类推。
 
-排序完成之后，再把所有数组值以key="value"和“&"字符连接起来，这串字符串便是待验签名字符串。签名算法同开放接口鉴权部分。
+排序完成之后，再把所有数组值以key="value"和“&"字符连接起来，这串字符串便是待验签名字符串。签名算法同[开放接口鉴权](kai-fang-api-jian-quan-fang-shi/)部分。
 
 _**Note:**_
 
