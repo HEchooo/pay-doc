@@ -1,6 +1,6 @@
-# 使用OpenSSL来产生RSA密钥
+# Use OpenSSL to generate RSA keys
 
-### OpenSSL安装
+### Install OpenSSL
 
 #### Linux（Ubuntu）
 
@@ -8,17 +8,15 @@
 
 #### Windows
 
-可以在官网下载 [Downloads](https://www.openssl.org/source/) .
+Donwload from Official website [Downloads](https://www.openssl.org/source/)&#x20;
 
 #### macOS
 
-自带，或者输入一下命令重新安装
-
 `brew reinstall openssl`
 
-### RSA密钥对的产生
+### Generation of RSA key pair
 
-#### Linux \ macOS
+#### Linux / macOS
 
 ```
 openssl genrsa -out pay_rsa_private_key.pem 1024
@@ -26,7 +24,7 @@ openssl pkcs8 -topk8 -inform PEM -in pay_rsa_private_key.pem  -outform PEM -nocr
 openssl rsa -in pay_rsa_private_key.pem -pubout -out  pay_rsa_public_key.pem
 ```
 
-#### Windows 在命令行窗口操作：
+#### Windows in CMD
 
 ```
 C:\OpenSSL-Win32\bin>openssl.exe
@@ -36,11 +34,11 @@ OpenSSL> rsa -in pay_rsa_private_key.pem -pubout -out  pay_rsa_public_key.pem
 OpenSSL> exit
 ```
 
-#### 使用方式：
+#### Method
 
-在当前目录下会产生两个文件pay\_rsa\_private\_key.pem和 pay\_rsa\_public\_key.pem. 前面一个是私钥文件，后面一个是公钥文件。商家自行保管私钥文件，用来对关键接口签名，并将公钥文件除注释部分内容通过接口上传，EchoooPay 后台会对接口验签。
+The RSA key pair generation will result in two files: pay\_rsa\_private\_key.pem (private key) and pay\_rsa\_public\_key.pem (public key) in the current directory. The former is to be kept secure by the merchant for signing critical interfaces, while the latter's uncommented content should be uploaded via the interface. EchoooPay's backend portal will then verify the interface using the provided public key.
 
-**PKCS8格式的标注私钥文件**
+**PKCS8 Formatted Annotated Private Key File**
 
 ```
 -----BEGIN PRIVATE KEY-----
@@ -61,7 +59,7 @@ vOntaIf9dsS4Fw==
 -----END PRIVATE KEY-----
 ```
 
-**公钥文件**
+**Public Key**
 
 ```
 -----BEGIN PUBLIC KEY-----
@@ -72,7 +70,7 @@ vx6UsO35Vpa/R65vSwIDAQAB
 -----END PUBLIC KEY-----
 ```
 
-**需要上传的公钥文件信息：**
+**Information for the Uploaded Public Key File**
 
 ```
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWm7/UV5l23A9akyNM06oUX7Hn

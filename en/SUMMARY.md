@@ -10,18 +10,18 @@
 * [后台管理](dui-jie-zhi-yin/hou-tai-guan-li.md)
 * [订单状态通知](dui-jie-zhi-yin/ding-dan-zhuang-tai-tong-zhi.md)
 
-## API文档
+## API Document
 
-* [开放API鉴权方式](api-wen-dang/kai-fang-api-jian-quan-fang-shi/README.md)
-  * [使用OpenSSL来产生RSA密钥](api-wen-dang/kai-fang-api-jian-quan-fang-shi/shi-yong-openssl-lai-chan-sheng-rsa-mi-yue.md)
-* [回调接口验证方式](api-wen-dang/hui-tiao-jie-kou-yan-zheng-fang-shi.md)
-* [openApi列表](api-wen-dang/openapi-lie-biao/README.md)
-  * [预创建支付单](api-wen-dang/openapi-lie-biao/yu-chuang-jian-zhi-fu-dan.md)
-  * [创建支付单](api-wen-dang/openapi-lie-biao/chuang-jian-zhi-fu-dan.md)
-  * [支付单详情](api-wen-dang/openapi-lie-biao/zhi-fu-dan-xiang-qing.md)
+* [Open API Authentication Method](api-document/open-api-authentication-method/README.md)
+  * [Use OpenSSL to generate RSA keys](api-document/open-api-authentication-method/use-openssl-to-generate-rsa-keys.md)
+* [Verify Callback Interface](api-document/verify-callback-interface.md)
+* [openApi](api-document/openapi/README.md)
+  * [Pre-create Payment Order](api-document/openapi/pre-create-payment-order.md)
+  * [Create Payment Order](api-document/openapi/create-payment-order.md)
+  * [Order Detail](api-document/openapi/order-detail.md)
 
-## 附录
+## Appendix
 
-* [🛠 其他](fu-lu/qi-ta/README.md)
-  * [📝 FAQ](fu-lu/qi-ta/faq.md)
-  * [💰 支持币种](fu-lu/qi-ta/zhi-chi-bi-zhong.md)
+* [🛠 Others](appendix/others/README.md)
+  * [📝 FAQ](appendix/others/faq.md)
+  * [💰 Support Tokens](appendix/others/support-tokens.md)
