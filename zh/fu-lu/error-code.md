@@ -1,4 +1,4 @@
-# FAQ
+# 💡 FAQ
 
 ## ErrorCode
 
@@ -13,3 +13,4 @@
 | PART\_PAY | 部分支付 |   |
 | PAID      | 支付完成 |   |
 | CANCLED   | 超时取消 |   |
+
