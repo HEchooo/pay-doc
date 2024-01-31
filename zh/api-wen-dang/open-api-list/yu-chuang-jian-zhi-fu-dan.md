@@ -1,12 +1,29 @@
-# 预创建支付单
+# 跳转收银台
 
 **URL**
 
-/service-pay/sellerApi/preCreateOrder
+POST： https://api.echooo.xyz/service-pay/sellerApi/cashier
+
+
 
 **字段说明**
 
-<table><thead><tr><th width="100">参数名称</th><th>参数类型</th><th>是否必须</th><th>示例</th><th>备注</th></tr></thead><tbody><tr><td>outerOrderId</td><td><em>T</em>文本</td><td>是</td><td></td><td>外部订单号。限制长度32位，含字母数字，区分大小写，不允许特殊字符</td></tr><tr><td>originCurrency</td><td><em>T</em>文本</td><td>是</td><td></td><td>原始法币</td></tr><tr><td>originCurrencyAmount</td><td><em>T</em>文本</td><td>是</td><td></td><td>原始法币数量</td></tr><tr><td>commodityName</td><td><em>T</em>文本</td><td>是</td><td></td><td>商品名称</td></tr></tbody></table>
+<table><thead><tr><th width="242">参数名称</th><th width="104">参数类型</th><th width="76">必填</th><th>备注</th></tr></thead><tbody><tr><td>outerOrderId</td><td><em>T</em>文本</td><td>是</td><td>外部订单号。限制长度32位，含字母数字，区分大小写，不允许特殊字符</td></tr><tr><td>originCurrency</td><td><em>T</em>文本</td><td>是</td><td>订单法币类型。见附录 - 支持币种</td></tr><tr><td>originCurrencyAmount</td><td><em>T</em>文本</td><td>是</td><td>订单法币数量，单位分</td></tr><tr><td>commodityName</td><td><em>T</em>文本</td><td>是</td><td>商品名称</td></tr></tbody></table>
+
+
+
+&#x20;**入参举例**
+
+```
+{
+    "outerOrderId": "100000000000000998",
+    "originCurrency": "usd",
+    "originCurrencyAmount": "50000",
+    "commodityName": "phone"
+}
+```
+
+
 
 **响应预览**
 
@@ -15,8 +32,8 @@
   "code": "0",
   "message": "success",
   "data": {
-    "cashierUrl": "http://aaa.com",
-    "payOrderId": "2023010131412"
+    "cashierUrl": "https://pay.echooo.xyz/en-us/v1/?oid=20240122999867758636301"
   }
 }
 ```
+
