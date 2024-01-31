@@ -24,4 +24,6 @@
 
 * [🛠 Others](appendix/others/README.md)
   * [📝 FAQ](appendix/others/faq.md)
+  * [⁉ ErrorCode](appendix/others/errorcode.md)
   * [💰 Support Tokens](appendix/others/support-tokens.md)
+  * [🛒 订单状态](appendix/others/ding-dan-zhuang-tai.md)

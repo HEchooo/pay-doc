@@ -1,16 +1,6 @@
 # 📝 FAQ
 
-## ErrorCode
-
-<table><thead><tr><th width="180">code</th><th>message</th></tr></thead><tbody><tr><td>130000</td><td>Merchant information error</td></tr><tr><td>130001</td><td>Access denied</td></tr><tr><td>130002</td><td>Merchant appKey error</td></tr><tr><td>130003</td><td>openApi signature error</td></tr><tr><td>130004</td><td>openApi appKey error</td></tr><tr><td>130005</td><td>Merchant information not initialized</td></tr><tr><td>130006</td><td>openApi request time error</td></tr></tbody></table>
-
 ## Payment Status
 
-| code      |                   |   |
-| --------- | ----------------- | - |
-| INIT      | Initial           |   |
-| WAIT\_PAY | Pending payment   |   |
-| PART\_PAY | Partial payment   |   |
-| PAID      | Payment completed |   |
-| CANCLED   | Timeout cancelled |   |
+<table><thead><tr><th>code</th><th width="208.33333333333331"></th><th></th></tr></thead><tbody><tr><td>INIT</td><td>Initial</td><td></td></tr><tr><td>WAIT_PAY</td><td>Pending payment</td><td></td></tr><tr><td>PART_PAY</td><td>Partial payment</td><td></td></tr><tr><td>PAID</td><td>Payment completed</td><td></td></tr><tr><td>CANCLED</td><td>Timeout cancelled</td><td></td></tr></tbody></table>
 
