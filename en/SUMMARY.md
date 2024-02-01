@@ -24,6 +24,7 @@
 
 * [📝 FAQ](others/faq.md)
 * [⁉ ErrorCode](others/errorcode.md)
-* [💰 Support Tokens](others/support-tokens.md)
+* [Support Tokens](others/support-tokens.md)
+* [💰 Support Tokens](others/support-tokens-1.md)
 * [🛠 Others](others/others.md)
 * [🛒 订单状态](others/ding-dan-zhuang-tai.md)
