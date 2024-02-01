@@ -14,7 +14,33 @@ GET： https://api.echooo.xyz/service-pay/sellerApi/orderPage
 
 **入参说明**
 
-<table><thead><tr><th width="242">参数名称</th><th width="104">参数类型</th><th width="76">必填</th><th>备注</th></tr></thead><tbody><tr><td>pageNo</td><td><em>T</em>文本</td><td>是</td><td>页面，从1开始</td></tr><tr><td>pageSize</td><td><em>T</em>文本</td><td>是</td><td>单页数量</td></tr></tbody></table>
+<table><thead><tr><th width="242">参数名称</th><th width="104">参数类型</th><th width="76">必填</th><th>备注</th></tr></thead><tbody><tr><td>pageNo</td><td>string</td><td>是</td><td>页面，从1开始</td></tr><tr><td>pageSize</td><td>string</td><td>是</td><td>单页数量</td></tr></tbody></table>
+
+
+
+**响应说明**
+
+| 参数名称                                                | 类型                                                     | 备注                                            |
+| --------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------- |
+| code                                                | number                                                 | 错误码                                           |
+| message                                             | string                                                 | 错误详情                                          |
+| pageSize                                            | number                                                 | 页码                                            |
+| pageNo                                              | number                                                 | 分页大小                                          |
+| total                                               | number                                                 | 数据总数                                          |
+| dataList                                            | object \[]                                             | 结果列表                                          |
+| payOrderId                                          | string                                                 | 支付单号                                          |
+| outerOrderId                                        | string                                                 | 商家订单号                                         |
+| chain                                               | object                                                 | 链                                             |
+| <ul><li>name</li><li>chainId</li><li>icon</li></ul> | <ul><li>string</li><li>number</li><li>string</li></ul> | <ul><li>链名称</li><li>链ID</li><li>链图标</li></ul> |
+| payStatus                                           | string                                                 | 支付状态                                          |
+| gmtPayFinish                                        | date                                                   | 支付完成时间                                        |
+| originCurrency                                      | string                                                 | 订单原始法币                                        |
+| originCurrencyAmount                                | string                                                 | 订单原始法币金额                                      |
+| payCurrency                                         | string                                                 | 订单应付法币                                        |
+| payCurrencyAmount                                   | string                                                 | 订单应付法币金额                                      |
+
+\
+
 
 
 
