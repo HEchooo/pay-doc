@@ -1,6 +1,6 @@
 # Table of contents
 
-* [EchooPay是什么](README.md)
+* [EchoooPay是什么](README.md)
 * [对接指引](<README (2).md>)
   * [商户入网](dui-jie-zhi-yin/what-we-do.md)
   * [技术对接](dui-jie-zhi-yin/ji-shu-dui-jie.md)
