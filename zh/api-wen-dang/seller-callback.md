@@ -22,7 +22,7 @@
 
 传参方式: Content-Type: application/json
 
-字段说明:&#x20;
+**字段说明:**&#x20;
 
 | 字段                  | 含义           |                                                                                            |
 | ------------------- | ------------ | ------------------------------------------------------------------------------------------ |
@@ -39,7 +39,7 @@
 | finishTime          | 完成时间         | 时间戳(ms),例：1706167219110                                                                    |
 | signature           | 签名           | [#qian-ming-he-yan-qian-gui-ze](seller-callback.md#qian-ming-he-yan-qian-gui-ze "mention") |
 
-例():
+**例:**
 
 ```
 curl 'https://api.youraddress.com/order/status/callback' \
@@ -66,7 +66,18 @@ curl 'https://api.youraddress.com/order/status/callback' \
 }'
 ```
 
-fan'hui
+**返回格式(商户实现):**
+
+平台在接收到http响应200并且返回code=0时, 判定为回调成功, 如:&#x20;
+
+```
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+  }
+}
+```
 
 ### 流程:
 
