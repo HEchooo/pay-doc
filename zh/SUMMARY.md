@@ -13,7 +13,6 @@
   * [回调接口验证方式](api-wen-dang/seller-callback.md)
   * [openApi列表](api-wen-dang/open-api-list/README.md)
     * [跳转收银台](api-wen-dang/open-api-list/yu-chuang-jian-zhi-fu-dan.md)
-    * [创建支付单【暂时废弃】](api-wen-dang/open-api-list/chuang-jian-zhi-fu-dan.md)
     * [支付单详情](api-wen-dang/open-api-list/chuang-jian-zhi-fu-dan-1.md)
     * [支付单分页](api-wen-dang/open-api-list/zhi-fu-dan-fen-ye.md)
 * [附录](fu-lu/README.md)

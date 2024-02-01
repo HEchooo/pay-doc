@@ -18,6 +18,12 @@ POST： https://api.echooo.xyz/service-pay/sellerApi/cashier
 
 
 
+**响应说明**
+
+<table><thead><tr><th width="242">参数名称</th><th width="104">参数类型</th><th>备注</th></tr></thead><tbody><tr><td>cashierUrl</td><td><em>T</em>文本</td><td>收银台跳转地址</td></tr></tbody></table>
+
+
+
 **CURL示例**
 
 ```
