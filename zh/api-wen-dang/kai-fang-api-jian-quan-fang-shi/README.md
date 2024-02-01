@@ -2,16 +2,17 @@
 
 ## 开放API
 
-以下为支持的开放API列表:&#x20;
+以下为支持的开放API列表:
 
 {% content-ref url="../open-api-list/" %}
 [open-api-list](../open-api-list/)
 {% endcontent-ref %}
 
-所有开放API均需要走本文所述的签名流程, 在HTTP Header中传入以下三个参数:&#x20;
+所有开放API均需要走本文所述的签名流程, 在HTTP Header中传入以下三个参数:
 
-| appKey    | 商户后台产生的appkey |   |
+| 字段        | 含义            |   |
 | --------- | ------------- | - |
+| appKey    | 商户后台产生的appkey |   |
 | timestamp | 时间(毫秒)        |   |
 | signToken | 签名            |   |
 
