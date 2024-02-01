@@ -39,7 +39,7 @@
 | finishTime          | 完成时间         | 时间戳(ms),例：1706167219110                                                                    |
 | signature           | 签名           | [#qian-ming-he-yan-qian-gui-ze](seller-callback.md#qian-ming-he-yan-qian-gui-ze "mention") |
 
-例:
+例():
 
 ```
 curl 'https://api.youraddress.com/order/status/callback' \
@@ -62,9 +62,11 @@ curl 'https://api.youraddress.com/order/status/callback' \
   "payTokenAmount": "1000",
   "incomeTokenAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7",
   "finishTime": "1706167219110",
-  "signature": ""
+  "signature": "DErfFug4ShiXjojFBZ0FpN3IObc4ZSMQ74g/DbnyQ/DGl5nY4ZNyZyagGBeziwAWNQED2IO/ts1f8v7lbcrTIf77PFgQn4Vsc1NlgAtazbf7NGCYzDdr202exUi6l0f24lAh9AiPkYvldEgUObSAxVJV07VlPGTijmuOo5H4sj9x1H/EveLwpkFc7Nu/mBE06hOwvIvgze2BzoHralkGaX3PlVuz/u+dzNIeKqGuProndwWdZMVf2e+1j94g7OCg/FD6teTQvEvFT1pTk0rn5M3GYeUjXbDBOoYCvrGIXFBhdJw7I8QjPe6zS0/bO+TWm8nw7nFC0roePWallc1Omw=="
 }'
 ```
+
+fan'hui
 
 ### 流程:
 
