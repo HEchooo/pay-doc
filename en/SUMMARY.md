@@ -20,10 +20,13 @@
   * [Create Payment Order](api-document/openapi/create-payment-order.md)
   * [Order Detail](api-document/openapi/order-detail.md)
 
-## Appendix
+## Others
 
-* [🛠 Others](appendix/others/README.md)
-  * [📝 FAQ](appendix/others/faq.md)
-  * [⁉ ErrorCode](appendix/others/errorcode.md)
-  * [💰 Support Tokens](appendix/others/support-tokens.md)
-  * [🛒 订单状态](appendix/others/ding-dan-zhuang-tai.md)
+* [💰 Support Tokens](others/support-tokens.md)
+* [⁉ ErrorCode](others/errorcode.md)
+* [📝 FAQ](others/faq.md)
+* [🛠 Others](others/others.md)
+
+***
+
+* [🛒 订单状态](ding-dan-zhuang-tai.md)
