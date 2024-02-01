@@ -12,15 +12,20 @@ POST： https://api.echooo.xyz/service-pay/sellerApi/cashier
 
 
 
-&#x20;**入参举例**
+**CURL示例**
 
 ```
-{
-    "outerOrderId": "100000000000000998",
+curl --location 'https://api.valleysound.xyz/service-pay/sellerApi/cashier' \
+--header 'Content-Type: application/json' \
+--header 'appKey: secret_key123' \
+--header 'timestamp: 1704643200000' \
+--header 'signToken: sign123' \
+--data '{
+    "outerOrderId": "2050322162971135583",
     "originCurrency": "usd",
-    "originCurrencyAmount": "50000",
+    "originCurrencyAmount": "1000",
     "commodityName": "phone"
-}
+}'
 ```
 
 
