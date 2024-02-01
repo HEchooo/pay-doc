@@ -12,7 +12,7 @@ GET： https://api.echooo.xyz/service-pay/sellerApi/orderPage
 
 
 
-**BODY说明**
+**入参说明**
 
 <table><thead><tr><th width="242">参数名称</th><th width="104">参数类型</th><th width="76">必填</th><th>备注</th></tr></thead><tbody><tr><td>pageNo</td><td><em>T</em>文本</td><td>是</td><td>页面，从1开始</td></tr><tr><td>pageSize</td><td><em>T</em>文本</td><td>是</td><td>单页数量</td></tr></tbody></table>
 
