@@ -12,7 +12,7 @@ GET： https://api.echooo.xyz/service-pay/sellerApi/orderDetail
 
 
 
-**BODY说明**
+**入参说明**
 
 <table><thead><tr><th width="242">参数名称</th><th width="104">参数类型</th><th width="76">必填</th><th>备注</th></tr></thead><tbody><tr><td>outerOrderId</td><td><em>T</em>文本</td><td>是</td><td>外部订单号。限制长度32位，含字母数字，区分大小写，不允许特殊字符</td></tr></tbody></table>
 
