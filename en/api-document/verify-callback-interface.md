@@ -10,13 +10,13 @@ The merchant will receive an order status callback from the platform within 30 m
 
 Order Status:
 
-{% content-ref url="https://app.gitbook.com/s/7mez1Z8oQx076ig6oJKa/fu-lu/error-code" %}
-[FAQ](https://app.gitbook.com/s/7mez1Z8oQx076ig6oJKa/fu-lu/error-code)
+{% content-ref url="../others/order-status.md" %}
+[order-status.md](../others/order-status.md)
 {% endcontent-ref %}
 
 
 
-## Merchant Callback Order
+### Merchant Callback Order
 
 ### Callback Information: POST
 

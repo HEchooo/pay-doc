@@ -10,10 +10,11 @@
 
 All Open APIs mentioned in this document must go through the signature process,  Send below parameters in HTTP Header
 
-| appKey    | appkey from Merchant |   |
-| --------- | -------------------- | - |
-| timestamp | Time(milliseconds)   |   |
-| signToken | Signature            |   |
+| appKey    | appkey from Merchant                        |
+| --------- | ------------------------------------------- |
+| appKey    | appKey generate from merchant backup system |
+| timestamp | Time(milliseconds)                          |
+| signToken | Signature                                   |
 
 
 
@@ -23,8 +24,8 @@ All Open APIs mentioned in this document must go through the signature process, 
 2. Merchants use appKey:secret\_key123 in the request header for querying interface calls.&#x20;
 3. For create, update, and delete operations, in addition to appKey, the merchant needs to sign with their private key and include a timestamp in the header (such as signToken:sign123, timestamp=1704643200000(ms)).
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="use-openssl-to-generate-rsa-keys.md" %}
+[use-openssl-to-generate-rsa-keys.md](use-openssl-to-generate-rsa-keys.md)
 {% endcontent-ref %}
 
 ## signToken Generation Rule
@@ -51,7 +52,7 @@ All Open APIs mentioned in this document must go through the signature process, 
 
 Note: The parameter concatenation process should occur before the caller encodes the parameters in the URL. The concatenated parameters do not need to go through URL encoding; symbols such as "&", ":", or Chinese characters should remain as they are. The concatenation process is independent of the encoding process that occurs during the transmission of the request.
 
-All parts are connected with underscores "\_" to form a complete concatenated string.
+3. All parts are connected with underscores "\_" to form a complete concatenated string.
 
 ## Full Example
 
