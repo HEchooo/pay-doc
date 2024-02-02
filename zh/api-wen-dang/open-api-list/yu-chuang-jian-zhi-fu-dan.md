@@ -49,7 +49,7 @@ curl --location 'https://api.valleysound.xyz/service-pay/sellerApi/cashier' \
   "code": "0",
   "message": "success",
   "data": {
-    "cashierUrl": "https://pay.echooo.xyz/en-us/v1/?oid=20240122999867758636301"
+    "cashierUrl": "https://pay.echooo.xyz/en-us/v1/?oid=20240122999867758636301&hash=4e85b9422820461aa252c4ebf353d9a0"
   }
 }
 ```
