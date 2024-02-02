@@ -20,6 +20,7 @@
   * [Order Detail](api-document/openapi/order-detail.md)
   * [Pre-create Payment Order](api-document/openapi/pre-create-payment-order.md)
   * [Create Payment Order](api-document/openapi/create-payment-order.md)
+  * [Payment Order List](api-document/openapi/payment-order-list.md)
 
 ## Others
 

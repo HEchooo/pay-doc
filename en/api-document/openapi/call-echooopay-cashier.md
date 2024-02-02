@@ -25,9 +25,13 @@ POST： https://api.echooo.xyz/service-pay/sellerApi/cashier​
 
 <table><thead><tr><th width="195.33333333333334">Parameter</th><th>Type</th><th>Remark</th></tr></thead><tbody><tr><td>cashierUrl</td><td>string</td><td>Cashier address</td></tr></tbody></table>
 
-​**CURL Example**
+​
+
+**CURL Example**
 
 curl --location 'https://api.valleysound.xyz/service-pay/sellerApi/cashier' \\--header 'Content-Type: application/json' \\--header 'appKey: secret\_key123' \\--header 'timestamp: 1704643200000' \\--header 'signToken: sign123' \\--data '{"outerOrderId": "2050322162971135583","originCurrency": "usd","originCurrencyAmount": "1000","commodityName": "phone"}'​
+
+
 
 **Response**
 
