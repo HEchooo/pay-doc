@@ -18,8 +18,6 @@
 * [openApi](api-document/openapi/README.md)
   * [Call EchoooPay Cashier](api-document/openapi/call-echooopay-cashier.md)
   * [Order Detail](api-document/openapi/order-detail.md)
-  * [Pre-create Payment Order](api-document/openapi/pre-create-payment-order.md)
-  * [Create Payment Order](api-document/openapi/create-payment-order.md)
   * [Payment Order List](api-document/openapi/payment-order-list.md)
 
 ## Others
@@ -27,5 +25,4 @@
 * [📝 FAQ](others/faq.md)
 * [⁉ ErrorCode](others/errorcode.md)
 * [💰 Support Tokens](others/support-tokens.md)
-* [🛠 Others](others/others.md)
-* [🛒 订单状态](others/ding-dan-zhuang-tai.md)
+* [🛠 Order Status](others/order-status.md)
