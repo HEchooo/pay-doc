@@ -1,4 +1,4 @@
-# 跳转收银台
+# Call EchoooPay Cashier
 
 **URL**
 
@@ -23,9 +23,7 @@ POST： https://api.echooo.xyz/service-pay/sellerApi/cashier​
 
 ​**Response Example**
 
-| Parameter  | Type   | Remark          |
-| ---------- | ------ | --------------- |
-| cashierUrl | string | Cashier address |
+<table><thead><tr><th width="195.33333333333334">Parameter</th><th>Type</th><th>Remark</th></tr></thead><tbody><tr><td>cashierUrl</td><td>string</td><td>Cashier address</td></tr></tbody></table>
 
 ​**CURL Example**
 

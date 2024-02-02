@@ -16,10 +16,10 @@
   * [Use OpenSSL to generate RSA keys](api-document/open-api-authentication-method/use-openssl-to-generate-rsa-keys.md)
 * [Verify Callback Interface](api-document/verify-callback-interface.md)
 * [openApi](api-document/openapi/README.md)
-  * [跳转收银台](api-document/openapi/tiao-zhuan-shou-yin-tai.md)
+  * [Call EchoooPay Cashier](api-document/openapi/call-echooopay-cashier.md)
+  * [Order Detail](api-document/openapi/order-detail.md)
   * [Pre-create Payment Order](api-document/openapi/pre-create-payment-order.md)
   * [Create Payment Order](api-document/openapi/create-payment-order.md)
-  * [Order Detail](api-document/openapi/order-detail.md)
 
 ## Others
 
