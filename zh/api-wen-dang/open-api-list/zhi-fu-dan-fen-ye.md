@@ -47,7 +47,7 @@ GET： https://api.echooo.xyz/service-pay/sellerApi/orderPage
 **CURL示例**
 
 ```
-curl --location 'https://api.echooo.xyz/service-pay/sellerApi/orderPage?pageNo=1&pageSize=10' \
+curl --location 'https://api.echooo.xyz/service-pay/sellerApi/orderPage?pageNo=1&pageSize=10&payStatus=PAY_SUCCESS&chainId=56&gmtPayFinishStart=1706772669122&gmtPayFinishEnd=1706859069122' \
 --header 'appKey: secret_key123' \
 --header 'timestamp: 1704643200000' \
 --header 'signToken: sign123'
