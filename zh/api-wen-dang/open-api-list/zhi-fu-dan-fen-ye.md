@@ -14,7 +14,7 @@ GET： https://api.echooo.xyz/service-pay/sellerApi/orderPage
 
 **入参说明**
 
-<table><thead><tr><th width="242">参数名称</th><th width="104">参数类型</th><th width="76">必填</th><th>备注</th></tr></thead><tbody><tr><td>pageNo</td><td>string</td><td>是</td><td>页面，从1开始</td></tr><tr><td>pageSize</td><td>string</td><td>是</td><td>单页数量</td></tr></tbody></table>
+<table><thead><tr><th width="242">参数名称</th><th width="104">参数类型</th><th width="76">必填</th><th>备注</th></tr></thead><tbody><tr><td>pageNo</td><td>string</td><td>是</td><td>页面，从1开始</td></tr><tr><td>pageSize</td><td>string</td><td>是</td><td>单页数量</td></tr><tr><td>gmtPayFinishStart</td><td>number</td><td>否</td><td>订单支付完成时间起始时间戳，毫秒级</td></tr><tr><td>gmtPayFinishEnd</td><td>number</td><td>否</td><td>订单支付完成时间结束时间戳，毫秒级</td></tr><tr><td>payStatus</td><td>string</td><td>否</td><td>支付状态</td></tr><tr><td>chainId</td><td>number</td><td>否</td><td>链ID</td></tr></tbody></table>
 
 
 
