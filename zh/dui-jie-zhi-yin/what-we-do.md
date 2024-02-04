@@ -20,7 +20,11 @@
 
 #### Echooo Wallet App 扫一扫确认链接钱包的授权页面如下（若未弹出确认浮窗，请刷新网络后重试）
 
+<div align="left">
 
+<figure><img src="../.gitbook/assets/img_v3_027o_dfab0940-678a-4e22-a27a-5acfc25b446g.jpg" alt="" width="188"><figcaption></figcaption></figure>
+
+</div>
 
 ## 第三步：获取对接 API Key ，开始技术对接
 
