@@ -14,10 +14,7 @@ GET： https://api.echooo.xyz/service-pay/sellerApi/orderPage​
 
 **Request Field**
 
-| Parameter | Type   | Mandatory | Remark                    |
-| --------- | ------ | --------- | ------------------------- |
-| pageNo    | string | Yes       | Page number, start from 1 |
-| pageSize  | string | Yes       | Page size                 |
+<table><thead><tr><th width="200">Parameter</th><th>Type</th><th>Mandatory</th><th>Remark</th></tr></thead><tbody><tr><td>pageNo</td><td>string</td><td>Yes</td><td>Page number, start from 1</td></tr><tr><td>pageSize</td><td>string</td><td>Yes</td><td>Page size</td></tr><tr><td>gmtPayFinishStart</td><td>number</td><td>No</td><td>Order payment completion time start timestamp,millisecond</td></tr><tr><td>gmtPayFinishEnd</td><td>number</td><td>No</td><td>Order payment completion time end timestamp,millisecond</td></tr><tr><td>payStatus</td><td>string</td><td>No</td><td>Payment status</td></tr><tr><td>chainId</td><td>number</td><td>No</td><td>Chain ID</td></tr></tbody></table>
 
 **Response Example**
 
