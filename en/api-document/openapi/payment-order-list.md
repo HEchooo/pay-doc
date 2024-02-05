@@ -53,10 +53,10 @@ curl --location 'https://api.echooo.xyz/service-pay/sellerApi/orderPage?pageNo=1
 ```
 {
     "code": 0,
-    "message": "操作成功",
+    "message": "success",
     "data": {
         "code": 0,
-        "message": "操作成功",
+        "message": "success",
         "dataList": [
             {
                 "payOrderId": "2024013099986745616265",
