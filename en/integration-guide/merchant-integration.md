@@ -32,7 +32,7 @@ Once you have reviewed and confirmed the information, click the "Submit" button 
 
 </div>
 
-## Step 3: Copy Integration API Key & start Technical Integration
+## Step 3: Copy Integration API Key & Start Technical Integration
 
 Please click "Merchant Management"- "API Key" and view your own special encrypt key, and proceed for technical integration.
 
