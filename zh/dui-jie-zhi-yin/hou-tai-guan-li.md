@@ -14,7 +14,7 @@ description: 商家后台可以发起提现、查看账户概况、订单情况�
 
 ## 资产列表
 
-#### 您可以定期查看账户下的代币余额。我们会每48小时以USDC代币的方式自动结算至您设置的 Tron 网络的收款账户。（所有网络的 USDT/USDC 与 Tron 网络结算的 USDC 都将以 1:1 的汇率进行结算）
+#### 您可以定期查看账户下的代币余额。我们会每48小时以 USDT 代币的方式自动结算至您设置的 Tron 网络的收款账户。（所有网络的 USDT/USDC 与 Tron 网络结算的 USDT 都将以 1:1 的汇率进行结算）
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
