@@ -4,11 +4,11 @@
 
 ## Integration Guide
 
-* [商户入网](integration-guide/shang-hu-ru-wang.md)
-* [Technical Integration](integration-guide/technical-integration.md)
-* [Initial Transaction](integration-guide/initial-transaction.md)
-* [Portal Management](integration-guide/portal-management.md)
-* [订单状态通知](integration-guide/ding-dan-zhuang-tai-tong-zhi.md)
+* [Merchant Integration](integration-guide/merchant-integration.md)
+* [Technical Integration](dui-jie-zhi-yin/ji-shu-dui-jie.md)
+* [Initial Transaction](dui-jie-zhi-yin/fa-qi-jiao-yi.md)
+* [Portal Management](dui-jie-zhi-yin/hou-tai-guan-li.md)
+* [Order Status Notification](integration-guide/order-status-notification.md)
 
 ## API Document
 
