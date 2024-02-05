@@ -20,20 +20,20 @@ Order Status:
 
 ### Callback Information: POST
 
-| Parameter           |                          | Remark                                      |
-| ------------------- | ------------------------ | ------------------------------------------- |
-| outerOrderId        | Merchant Transaction ID  |                                             |
-| orderId             | EchoooPay Transaction ID |                                             |
-| receiptAddress      | Merchant wallet address  |                                             |
-| payCurrency         | Order fiat currency      |                                             |
-| payCurrencyAmount   | Order fiat amount        |                                             |
-| payStatus           | Payment Status           |                                             |
-| chainId             | Payment network ID       | chain ID, example：Ethereum                  |
-| payTokenCoingeckoId | Payment currency         | Link\[[链接](https://www.coingecko.com/)][^1] |
-| payTokenAmount      | Payment amount           |                                             |
-| incomeTokenAddress  | Receive address          |                                             |
-| finishTime          | Complete time            |                                             |
-| signature           | Signature                |                                             |
+| Parameter           |                          | Remark                                                                                                       |
+| ------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| outerOrderId        | Merchant Transaction ID  |                                                                                                              |
+| orderId             | EchoooPay Transaction ID |                                                                                                              |
+| receiptAddress      | Merchant wallet address  |                                                                                                              |
+| payCurrency         | Order fiat currency      | [support tokens](../others/support-tokens.md), example: usd                                                  |
+| payCurrencyAmount   | Order fiat amount        |                                                                                                              |
+| payStatus           | Payment Status           |                                                                                                              |
+| chainId             | Payment network ID       | chain ID, example：Ethereum                                                                                   |
+| payTokenCoingeckoId | Payment currency         | [Link](https://www.coingecko.com/)                                                                           |
+| payTokenAmount      | Payment amount           |                                                                                                              |
+| incomeTokenAddress  | Receive address          |                                                                                                              |
+| finishTime          | Complete time            | time stamp(ms), example:1706167219110                                                                        |
+| signature           | Signature                | [#signature-and-verification-rules](verify-callback-interface.md#signature-and-verification-rules "mention") |
 
 ### Process
 
@@ -71,5 +71,3 @@ public static boolean publicKeyVerify(String data, String publicKey, String sign
     return signature.verify(Base64.decodeBase64(signData));
 }
 ```
-
-[^1]: 
