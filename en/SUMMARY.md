@@ -1,14 +1,14 @@
 # Table of contents
 
-* [👋 EchoooPay是什么](README.md)
+* [👋 What's EchoooPay?](README.md)
 
-## 对接指引
+## Integration Guide
 
-* [商户入网](dui-jie-zhi-yin/shang-hu-ru-wang.md)
-* [技术对接](dui-jie-zhi-yin/ji-shu-dui-jie.md)
-* [发起交易](dui-jie-zhi-yin/fa-qi-jiao-yi.md)
-* [后台管理](dui-jie-zhi-yin/hou-tai-guan-li.md)
-* [订单状态通知](dui-jie-zhi-yin/ding-dan-zhuang-tai-tong-zhi.md)
+* [商户入网](integration-guide/shang-hu-ru-wang.md)
+* [Technical Integration](integration-guide/technical-integration.md)
+* [Initial Transaction](integration-guide/initial-transaction.md)
+* [Portal Management](integration-guide/portal-management.md)
+* [订单状态通知](integration-guide/ding-dan-zhuang-tai-tong-zhi.md)
 
 ## API Document
 

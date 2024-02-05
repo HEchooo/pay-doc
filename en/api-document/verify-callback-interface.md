@@ -2,8 +2,8 @@
 
 The merchant will receive an order status callback from the platform within 30 minutes after initiating the transaction. Here are the returned fields. How to initiate a transaction:
 
-{% content-ref url="../dui-jie-zhi-yin/fa-qi-jiao-yi.md" %}
-[fa-qi-jiao-yi.md](../dui-jie-zhi-yin/fa-qi-jiao-yi.md)
+{% content-ref url="../integration-guide/initial-transaction.md" %}
+[initial-transaction.md](../integration-guide/initial-transaction.md)
 {% endcontent-ref %}
 
 
