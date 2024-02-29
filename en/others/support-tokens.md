@@ -2,11 +2,12 @@
 
 ### Chain List <a href="#zhi-chi-de-lian-lie-biao" id="zhi-chi-de-lian-lie-biao"></a>
 
-| Chain    | Chain ID |
-| -------- | -------- |
-| Ethereum | 1        |
-| Polygon  | 137      |
-| Bsc      | 56       |
+| Chain    | Chain ID  |
+| -------- | --------- |
+| Ethereum | 1         |
+| Polygon  | 137       |
+| Bsc      | 56        |
+| Tron     | 728126428 |
 
 ​
 

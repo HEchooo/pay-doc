@@ -23,6 +23,6 @@
 ## Others
 
 * [📝 FAQ](others/faq.md)
-* [⁉ ErrorCode](others/errorcode.md)
+* [⁉️ ErrorCode](others/errorcode.md)
 * [💰 Support Tokens](others/support-tokens.md)
-* [🛠 Order Status](others/order-status.md)
+* [🛠️ Order Status](others/order-status.md)
