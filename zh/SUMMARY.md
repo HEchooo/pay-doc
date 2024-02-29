@@ -17,6 +17,6 @@
     * [支付单分页](api-wen-dang/open-api-list/zhi-fu-dan-fen-ye.md)
 * [附录](fu-lu/README.md)
   * [💡 FAQ](fu-lu/error-code.md)
-  * [⁉ 错误码](fu-lu/cuo-wu-ma.md)
+  * [⁉️ 错误码](fu-lu/cuo-wu-ma.md)
   * [💰 支持币种](fu-lu/inviting-members.md)
   * [🛒 订单状态](fu-lu/ding-dan-zhuang-tai.md)
