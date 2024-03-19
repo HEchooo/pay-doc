@@ -10,7 +10,7 @@ description: >-
 
 ## 方式一：直接调用 Echooo Pay 收银台页面
 
-#### 您可以根据创建收银台订单生成并打开一个加密链接如下图，收银台显示的“支持网络”目前已支持 Ethereum、Polygon、BSC。
+#### 您可以根据创建收银台订单生成并打开一个加密链接如下图，收银台显示的“支持网络”目前已支持 Ethereum、Polygon、BSC、Tron。
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
